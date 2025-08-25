@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Authentication</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --card-w: 320px;
+            --radius: 18px;
+            --blue: #2f7dde;
+            --blue-2: #5aa0f2;
+        }
+
+
+        /* background like the mock */
+        body {
+            font-family: "Segoe UI", system-ui, sans-serif;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            margin: 0;
+            background: radial-gradient(1200px 600px at 20% -10%, #e6f2ff 0%, #f6f8fc 55%, #eef2f7 100%);
+        }
+
+        /* container that can show one or two cards */
+        .auth-wrap {
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 12px;
+            align-items:center;
+        }
+
+        /* === Card ========================================================== */
+        .auth-card {
+            width: var(--card-w);
+            border-radius: var(--radius);
+            background: #ffffff;
+            box-shadow: 0 20px 40px rgba(24,62,119,.18);
+            padding: 28px 28px 26px 28px;
+            position: relative;
+            overflow: hidden;
+            isolation: isolate; /* ensure the z-index stacking is scoped */
+        }
+
+            /* blue rounded side block (BEHIND content) */
+            .auth-card::before {
+                content: "";
+                position: absolute;
+                inset: auto auto 0 0;
+                width: 0%;
+                height: 110%;
+                translate: -22% 6%; /* pulls it outside left & rounded like the image */
+                background: linear-gradient(160deg, var(--blue), var(--blue-2));
+                border-radius: 26px;
+                box-shadow: 0 10px 28px rgba(47,125,222,.45) inset;
+                z-index: 0; /* behind */
+                pointer-events: none;
+            }
+
+            /* lift content above blue */
+            .auth-card .card-body {
+                position: relative;
+                z-index: 1;
+            }
+
+        .auth-title {
+            color: var(--blue);
+            font-weight: 700;
+            font-size: 1.35rem;
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .form-control, .form-select {
+            border-radius: 12px;
+            padding: .7rem .9rem;
+            border: 1px solid #e5e9f2;
+            box-shadow: none;
+        }
+
+            .form-control:focus, .form-select:focus {
+                border-color: #cfe3ff;
+                outline: 0;
+                box-shadow: 0 0 0 .2rem rgba(47,125,222,.12);
+            }
+
+        .btn-primary {
+            background: var(--blue);
+            border: 0;
+            border-radius: 12px;
+            padding: .7rem 1rem;
+            width: 100%;
+        }
+
+            .btn-primary:hover {
+                filter: brightness(.95);
+            }
+
+        .toggle-link {
+            text-align: center;
+            margin-top: 14px;
+            color: var(--blue);
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+            .toggle-link:hover {
+                text-decoration: underline;
+            }
+
+        /* social row (matches mock’s round grey buttons) */
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+            .social-row button {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                border: 0;
+                background: #f2f4f7;
+            }
+
+    </style>
+</head>
+<body>
+
+    <div class="auth-wrap">
+
+        <!-- Registration (left) -->
+        <div class="auth-card" id="registerSection">
+            <div class="card-body">
+                <div class="auth-title" style="text-align:center;">Registration</div>
+                <form id="registerForm">
+                    <input type="text" class="form-control mb-3" id="regUsername" placeholder="Username" required />
+                    <input type="email" class="form-control mb-3" id="regEmail" placeholder="Email" required />
+                    <input type="password" class="form-control mb-3" id="regPassword" placeholder="Password" required />
+                    <select class="form-select mb-3" id="regRole">
+
+                        <option value="ADMIN">Admin</option>
+                        <option value="POLICYHOLDER">Policyholder</option>
+                        <option value="AGENT">Agent</option>
+                        <option value="CLAIM_ADJUSTER">ClaimAdjuster</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+                <div class="toggle-link" onclick="toggleForms()">Already have an account? Login</div>
+
+            </div>
+        </div>
+
+        <!-- Login (right) -->
+        <div class="auth-card" id="loginSection" style="display:none;">
+            <div class="card-body">
+                <div class="auth-title">Welcome Back!</div>
+                <form id="loginForm">
+                    <input type="text" class="form-control mb-3" id="loginUsername" placeholder="Username" required />
+                    <input type="password" class="form-control mb-2" id="loginPassword" placeholder="Password" required />
+                    
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+
+                @*   <div class="text-center mt-3" style="color:#6b7a90;">or login with social platforms</div>
+                <div class="social-row">
+                    <button title="Google"><i class="bi bi-google"></i></button>
+                    <button title="Facebook"><i class="bi bi-facebook"></i></button>
+                    <button title="Github"><i class="bi bi-github"></i></button>
+                    <button title="LinkedIn"><i class="bi bi-linkedin"></i></button>
+                </div> *@
+
+                <div class="toggle-link" onclick="toggleForms()">Don’t have an account? Register</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // Show both cards side by side or toggle — your choice:
+        // 1) Keep toggle behavior (as in your screenshots)
+                function toggleForms(){
+          console.log("Toggling forms...");
+          $('#registerSection').toggle();
+          $('#loginSection').toggle();
+        }
+
+        // 2) To show BOTH like the mock, simply remove display:none from #loginSection
+        //    and delete toggleForms() uses.
+
+        // Keep your existing AJAX; ids unchanged.
+        $('#registerForm').on('submit', function(e){
+          e.preventDefault();
+          const body = {
+            username: $('#regUsername').val(),
+            email:    $('#regEmail').val(),
+            password: $('#regPassword').val()
+          };
+          const role = $('#regRole').val();
+          $.ajax({
+            url:`/api/authentication/register?role=${role}`,
+            type:'POST',
+            contentType:'application/json',
+            data: JSON.stringify(body),
+            success: r => { alert(r.message || 'Registered'); toggleForms(); },
+            error:   x => { alert(x.responseJSON?.message || 'Registration failed'); }
+          });
+        });
+
+         $('#loginForm').on('submit', function(e){
+          e.preventDefault();
+          const body = {
+            username: $('#loginUsername').val(),
+            password: $('#loginPassword').val()
+          };
+          $.ajax({
+            url:'/api/authentication/login',
+            type:'POST',
+            contentType:'application/json',
+            data: JSON.stringify(body),
+            success: r => {
+              alert('Login successful!');
+              localStorage.setItem("userData", JSON.stringify(r));
+               
+            if (r.roles && r.roles.includes('POLICYHOLDER')) {
+                window.location.href = "/UserDashboard";
+            } else {
+                window.location.href = "/Dashboard";
+            }
+            },
+            error: x => {
+              alert(x.responseJSON?.message || 'Login failed');
+            }
+          });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,663 @@
+[
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/Authentication/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "insuranceclaimproject.Dtos.UserLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.AuthenticationController",
+    "Method": "GetPolicyholders",
+    "RelativePath": "api/Authentication/policyholders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.AuthenticationController",
+    "Method": "Register",
+    "RelativePath": "api/Authentication/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerUserDto",
+        "Type": "insuranceclaimproject.Dtos.RegisterUserDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.AuthenticationController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Authentication/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "GetClaimDetails",
+    "RelativePath": "api/Claim/{claimId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "DeleteClaim",
+    "RelativePath": "api/Claim/{claimId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "AssignAdjuster",
+    "RelativePath": "api/Claim/{claimId}/assign-adjuster",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "assignDto",
+        "Type": "insuranceclaimproject.Controllers.AssignAdjusterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "DownloadDocument",
+    "RelativePath": "api/Claim/{claimId}/download-document",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "UpdateClaimStatus",
+    "RelativePath": "api/Claim/{claimId}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statusDto",
+        "Type": "insuranceclaimproject.Dtos.UpdateClaimStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "UpdateClaimWithDocument",
+    "RelativePath": "api/Claim/{claimId}/update-with-document",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ClaimAmount",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "GetClaimWithDocument",
+    "RelativePath": "api/Claim/{claimId}/with-document",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "GetAllClaims",
+    "RelativePath": "api/Claim/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "GetMyClaims",
+    "RelativePath": "api/Claim/my-claims",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "GetClaimsWithDocumentsByPolicy",
+    "RelativePath": "api/Claim/policy/{policyId}/with-documents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "policyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "GetClaimsWithDocumentsByPolicyholder",
+    "RelativePath": "api/Claim/policyholder/{policyholderId}/with-documents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "policyholderId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "GetClaimStatistics",
+    "RelativePath": "api/Claim/statistics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "SubmitClaim",
+    "RelativePath": "api/Claim/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimDto",
+        "Type": "insuranceclaimproject.Dtos.SubmitClaimDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.ClaimController",
+    "Method": "SubmitClaimWithDocument",
+    "RelativePath": "api/Claim/submit-with-document",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PolicyId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ClaimAmount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.DocumentController",
+    "Method": "GetDocumentById",
+    "RelativePath": "api/Document/{documentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.DocumentController",
+    "Method": "DeleteDocument",
+    "RelativePath": "api/Document/{documentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.DocumentController",
+    "Method": "GetDocumentsByClaimId",
+    "RelativePath": "api/Document/claim/{claimId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "claimId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.DocumentController",
+    "Method": "UploadDocument",
+    "RelativePath": "api/Document/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documentDto",
+        "Type": "insuranceclaimproject.Dtos.Document.CreateDocumentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyController",
+    "Method": "CreatePolicy",
+    "RelativePath": "api/Policy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createPolicyDto",
+        "Type": "insuranceclaimproject.Dtos.Policy.CreatePolicyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyController",
+    "Method": "GetAllPolicies",
+    "RelativePath": "api/Policy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyController",
+    "Method": "GetPolicyDetails",
+    "RelativePath": "api/Policy/{policyId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "policyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyController",
+    "Method": "UpdatePolicy",
+    "RelativePath": "api/Policy/{policyId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "policyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatePolicyDto",
+        "Type": "insuranceclaimproject.Dtos.Policy.UpdatePolicyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyController",
+    "Method": "DeletePolicy",
+    "RelativePath": "api/Policy/{policyId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "policyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyController",
+    "Method": "CancelPolicy",
+    "RelativePath": "api/Policy/{policyId}/cancel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "policyId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyCategoryController",
+    "Method": "CreatePolicyCategory",
+    "RelativePath": "api/PolicyCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "insuranceclaimproject.Dtos.CreatePolicyCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyCategoryController",
+    "Method": "GetAllPolicyCategories",
+    "RelativePath": "api/PolicyCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyCategoryController",
+    "Method": "GetPolicyCategoriesByUserId",
+    "RelativePath": "api/PolicyCategory/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyCategoryController",
+    "Method": "ActivateCategoryAndCreatePolicy",
+    "RelativePath": "api/PolicyCategory/activate-and-create-policy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "insuranceclaimproject.Dtos.ActivateCategoryAndCreatePolicyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyCategoryController",
+    "Method": "GetPendingPolicyCategories",
+    "RelativePath": "api/PolicyCategory/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyCategoryController",
+    "Method": "GetUserCategoriesAndPolicies",
+    "RelativePath": "api/PolicyCategory/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.SummaryController",
+    "Method": "GetSummary",
+    "RelativePath": "api/Summary/summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "insuranceclaimproject.Dtos.DashboardSummaryDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.SupportTicketController",
+    "Method": "CreateTicket",
+    "RelativePath": "api/SupportTicket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createTicketDto",
+        "Type": "insuranceclaimproject.Dtos.SupportTicket.CreateSupportTicketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.SupportTicketController",
+    "Method": "GetTicketById",
+    "RelativePath": "api/SupportTicket/{ticketId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticketId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.SupportTicketController",
+    "Method": "UpdateTicketStatus",
+    "RelativePath": "api/SupportTicket/{ticketId}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticketId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statusDto",
+        "Type": "insuranceclaimproject.Dtos.SupportTicket.UpdateSupportTicketStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.SupportTicketController",
+    "Method": "GetAllTickets",
+    "RelativePath": "api/SupportTicket/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.SupportTicketController",
+    "Method": "GetTicketsByUser",
+    "RelativePath": "api/SupportTicket/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "insuranceclaimproject.Controllers.PolicyUIController",
+    "Method": "Index",
+    "RelativePath": "policy",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

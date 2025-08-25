@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --success-color: #198754;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --body-bg: #f4f7fc;
+        }
+
+        body {
+            background-color: var(--body-bg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #495057;
+        }
+
+        .dashboard-container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        .stat-card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            position: relative;
+            background: #fff;
+        }
+
+            .stat-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .stat-card .card-body {
+                position: relative;
+                z-index: 2;
+            }
+
+            .stat-card .icon {
+                font-size: 3rem;
+                opacity: 0.8;
+                transition: transform 0.3s ease;
+            }
+
+            .stat-card:hover .icon {
+                transform: scale(1.1);
+            }
+
+            .stat-card .card-title {
+                font-weight: 600;
+                color: #6c757d;
+            }
+
+            .stat-card .stat-number {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: var(--dark-color);
+            }
+
+            .stat-card::before {
+                content: '';
+                position: absolute;
+                top: -50px;
+                right: -50px;
+                width: 150px;
+                height: 150px;
+                background-color: var(--primary-color);
+                opacity: 0.1;
+                border-radius: 50%;
+                transition: all 0.4s ease;
+            }
+
+            .stat-card.border-success::before {
+                background-color: var(--success-color);
+            }
+
+            .stat-card.border-danger::before {
+                background-color: var(--danger-color);
+            }
+
+            .stat-card.border-warning::before {
+                background-color: var(--warning-color);
+            }
+
+            .stat-card:hover::before {
+                transform: scale(1.2);
+                opacity: 0.15;
+            }
+
+        .chart-card, .ticket-card {
+            background: #fff;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+            padding: 1.5rem;
+        }
+
+        .chart-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .ticket-status-wrapper {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .ticket-status {
+            text-align: center;
+        }
+
+            .ticket-status .status-circle {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                font-weight: 600;
+                position: relative;
+                overflow: hidden;
+                box-shadow: inset 0 4px 10px rgba(0,0,0,0.1);
+            }
+
+                .ticket-status .status-circle .count {
+                    font-size: 2.5rem;
+                    font-weight: 700;
+                }
+
+        .ticket-open .status-circle {
+            background: conic-gradient(var(--danger-color) 0% 75%, var(--light-color) 75% 100%);
+            color: var(--danger-color);
+        }
+
+        .ticket-resolved .status-circle {
+            background: conic-gradient(var(--success-color) 0% 85%, var(--light-color) 85% 100%);
+            color: var(--success-color);
+        }
+
+        .ticket-status .status-label {
+            margin-top: 1rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container dashboard-container">
+        <!-- Page Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+            <h1 class="h2">Analytics Dashboard</h1>
+            <div class="fs-5 text-muted" id="current-date"></div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="row g-4 mb-4">
+            <div class="col-xl-3 col-md-6">
+                <div class="stat-card border-primary">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Total Policies</h5>
+                            <div class="stat-number" id="totalPolicies" data-target="0">0</div>
+                        </div>
+                        <i class="bi bi-journal-check icon text-primary"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="stat-card border-success">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Total Claims</h5>
+                            <div class="stat-number" id="totalClaims" data-target="0">0</div>
+                        </div>
+                        <i class="bi bi-patch-check-fill icon text-success"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="stat-card border-danger">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Pending Claims</h5>
+                            <div class="stat-number" id="pendingClaims" data-target="0">0</div>
+                        </div>
+                        <i class="bi bi-hourglass-split icon text-danger"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="stat-card border-warning">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5 class="card-title">Pending Policies</h5>
+                            <div class="stat-number" id="pendingPolicies" data-target="0">0</div>
+                        </div>
+                        <i class="bi bi-file-earmark-diff icon text-warning"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="row g-4 mb-4">
+            <div class="col-lg-4">
+                <div class="chart-card">
+                    <h5 class="chart-title">Individual Health</h5>
+                    <canvas id="healthChart"></canvas>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="chart-card">
+                    <h5 class="chart-title">Critical Illness</h5>
+                    <canvas id="illnessChart"></canvas>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="chart-card">
+                    <h5 class="chart-title">Personal Accident</h5>
+                    <canvas id="accidentChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ticket Status Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="ticket-card">
+                    <h5 class="chart-title">Support Ticket Status</h5>
+                    <div class="ticket-status-wrapper">
+                        <div class="ticket-status ticket-open">
+                            <div class="status-circle">
+                                <div class="count" id="openTickets" data-target="0">0</div>
+                                <span>Open</span>
+                            </div>
+                            <div class="status-label">Open Tickets</div>
+                        </div>
+                        <div class="ticket-status ticket-resolved">
+                            <div class="status-circle">
+                                <div class="count" id="resolvedTickets" data-target="0">0</div>
+                                <span>Resolved</span>
+                            </div>
+                            <div class="status-label">Resolved Tickets</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+            $(document).ready(function () {
+            // --- Set Current Date ---
+            const today = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            $('#current-date').text(today.toLocaleDateString('en-US', options));
+
+             const userDataString = localStorage.getItem('userData');
+            let token = null;
+
+            if (userDataString) {
+                try {
+                    const userData = JSON.parse(userDataString);
+                    token = userData.token;
+                } catch (e) {
+                    console.error("Failed to parse userData from localStorage", e);
+                }
+            }
+
+            if (!token) {
+                alert("No authentication token found. Please log in.");
+                window.location.href = "/";
+                return;
+            }
+          
+
+            // --- API call with Bearer Token ---
+            $.ajax({
+                url: "/api/Summary/summary",
+                method: "GET",
+                headers: {
+                    "Authorization": "Bearer " + token
+                },
+                success: function (data) {
+                    // Update counters
+                    $("#totalPolicies").attr("data-target", data.totalPoliciesCount);
+                    $("#totalClaims").attr("data-target", data.totalClaimsCount);
+                    $("#pendingClaims").attr("data-target", data.totalPendingClaims);
+                    $("#pendingPolicies").attr("data-target", data.totalPendingPolicies);
+                    $("#openTickets").attr("data-target", data.totalOpenTicketCount);
+                    $("#resolvedTickets").attr("data-target", data.totalResolvedTicketCount);
+
+                    animateCounters();
+
+                    // Charts
+                    createPieChart(
+                        "healthChart",
+                        [data.categories["Individual Health Insurance"].activeCount, data.categories["Individual Health Insurance"].pendingCount],
+                        ["Active", "Pending"],
+                        ["#0d6efd", "#ffc107"]
+                    );
+
+                    createPieChart(
+                        "illnessChart",
+                        [data.categories["Critical Illness Insurance"].activeCount, data.categories["Critical Illness Insurance"].pendingCount],
+                        ["Active", "Pending"],
+                        ["#198754", "#ffc107"]
+                    );
+
+                    createPieChart(
+                        "accidentChart",
+                        [data.categories["Personal Accident Insurance"].activeCount, data.categories["Personal Accident Insurance"].pendingCount],
+                        ["Active", "Pending"],
+                        ["#dc3545", "#ffc107"]
+                    );
+                },
+                error: function (xhr) {
+                    console.error("Error fetching dashboard data", xhr);
+                    if (xhr.status === 401) {
+                        alert("Unauthorized! Please log in again.");
+                        // Optionally redirect to login page
+                    }
+                }
+            });
+
+            // --- Animated Counters ---
+            function animateCounters() {
+                $(".stat-number, .ticket-status .count").each(function () {
+                    const $this = $(this);
+                    const target = parseInt($this.attr("data-target"));
+                    $this.text("0");
+
+                    $({ Counter: 0 }).animate({ Counter: target }, {
+                        duration: 2000,
+                        easing: "swing",
+                        step: function () {
+                            $this.text(Math.ceil(this.Counter));
+                        },
+                        complete: function () {
+                            $this.text(target);
+                        }
+                    });
+                });
+            }
+
+            // --- Chart.js Pie Charts ---
+            function createPieChart(chartId, data, labels, colors) {
+                const ctx = document.getElementById(chartId).getContext("2d");
+                new Chart(ctx, {
+                    type: "doughnut",
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: data,
+                            backgroundColor: colors,
+                            borderColor: "#fff",
+                            borderWidth: 4,
+                            hoverOffset: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        cutout: "70%",
+                        plugins: {
+                            legend: {
+                                position: "bottom",
+                                labels: {
+                                    padding: 20,
+                                    usePointStyle: true,
+                                    pointStyle: "circle"
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,603 @@
+﻿
+
+@* Collapsible sidebar + top navbar layout (Bootstrap 5) *@
+
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    bool showSidebar = !(currentController == "AuthenticationUI" &&
+                         (currentAction == "LoginRegister") || (currentController == "Landing") || (currentController == "UserDashboard"));
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Insurance</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        
+:root {
+    --sbw: 280px;
+    --sbw-collapsed: 80px;
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --success-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    --warning-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --info-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --sidebar-bg: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    --topbar-bg: rgba(255, 255, 255, 0.95);
+    --shadow-soft: 0 2px 20px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 4px 25px rgba(0, 0, 0, 0.12);
+    --border-radius: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Layout grid */
+.app.has-sidebar {
+    display: grid;
+    grid-template-columns: var(--sbw) 1fr;
+    grid-template-rows: 70px auto;
+    grid-template-areas:
+        "sidebar topbar"
+        "sidebar content";
+    min-height: 100vh;
+    transition: var(--transition);
+}
+
+    .app.has-sidebar.sb-collapsed {
+        grid-template-columns: var(--sbw-collapsed) 1fr;
+    }
+
+.app:not(.has-sidebar) {
+    min-height: 100vh;
+}
+
+    .app:not(.has-sidebar) .content {
+        padding: 0;
+    }
+
+/* Sidebar Styles */
+.sidebar {
+    grid-area: sidebar;
+    background: var(--sidebar-bg);
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 1rem;
+    z-index: 1020;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+    overflow-y: auto;
+}
+
+.sb-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    margin: 0.5rem 0 2rem 0;
+    padding: 0.75rem;
+    
+    border-radius: var(--border-radius);
+    color:var(--primary-gradient);
+    text-decoration: none;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+    .sb-brand::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+    }
+
+    .sb-brand:hover::before {
+        left: 100%;
+    }
+
+    .sb-brand:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+        color: white;
+        text-decoration: none;
+    }
+
+    .sb-brand i {
+        font-size: 1.5rem;
+        animation: pulse 2s infinite;
+    }
+
+
+
+.sb-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #667eea;
+    font-size: 1.1rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-soft);
+}
+
+    .sb-toggle:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: rotate(180deg);
+    }
+
+.sb-nav {
+    margin-top: 1rem;
+}
+
+    .sb-nav .nav-link {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.875rem 1.25rem;
+        margin-bottom: 0.5rem;
+        border-radius: var(--border-radius);
+        color: #64748b;
+        text-decoration: none;
+        font-weight: 500;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .sb-nav .nav-link::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: var(--primary-gradient);
+            transform: scaleY(0);
+            transition: var(--transition);
+        }
+
+        .sb-nav .nav-link:hover::before,
+        .sb-nav .nav-link.active::before {
+            transform: scaleY(1);
+        }
+
+        .sb-nav .nav-link:hover,
+        .sb-nav .nav-link.active {
+            background: rgba(102, 126, 234, 0.1);
+            color: #667eea;
+            transform: translateX(8px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .sb-nav .nav-link i {
+            font-size: 1.1rem;
+            width: 20px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .sb-nav .nav-link:hover i {
+            transform: scale(1.1);
+        }
+
+/* Collapsed sidebar styles */
+.app.has-sidebar.sb-collapsed .sb-text {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: var(--transition);
+}
+
+.app.has-sidebar.sb-collapsed .sb-brand-text {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: var(--transition);
+}
+
+.app.has-sidebar.sb-collapsed .nav-link {
+    justify-content: center;
+    padding: 0.875rem;
+}
+
+.app.has-sidebar.sb-collapsed .sb-brand {
+    justify-content: center;
+}
+
+/* Topbar Styles */
+.topbar {
+    grid-area: topbar;
+    background: var(--topbar-bg);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1025;
+    box-shadow: var(--shadow-soft);
+}
+
+.topbar-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    color: #334155;
+    font-size: 1.1rem;
+}
+
+    .topbar-title .btn {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(102, 126, 234, 0.1);
+        border: none;
+        color: #667eea;
+        transition: var(--transition);
+    }
+
+        .topbar-title .btn:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: rotate(90deg);
+        }
+
+.user-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+    .user-pill:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-medium);
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-gradient);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+    .avatar::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+        animation: shimmer 3s linear infinite;
+    }
+
+
+
+.user-meta {
+    line-height: 1.3;
+}
+
+    .user-meta .name {
+        font-weight: 600;
+        color: #334155;
+    }
+
+    .user-meta .sub {
+        font-size: 0.8rem;
+        color: #64748b;
+    }
+
+/* Content area */
+.content {
+    grid-area: content;
+    padding: 2rem;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+
+
+/* Health-themed badges and indicators */
+.health-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+    .health-indicator.active {
+        background: var(--success-gradient);
+        color: white;
+    }
+
+    .health-indicator.pending {
+        background: var(--warning-gradient);
+        color: white;
+    }
+
+    .health-indicator.inactive {
+        background: #e2e8f0;
+        color: #64748b;
+    }
+
+/* Notification dot */
+.notification-dot {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background: #ef4444;
+    border-radius: 50%;
+    animation: blink 2s infinite;
+}
+
+
+
+
+/* Demo content styles */
+.demo-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-soft);
+    border-left: 4px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+    .stat-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--primary-gradient);
+        transform: scaleX(0);
+        transition: var(--transition);
+    }
+
+    .stat-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    .stat-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-medium);
+    }
+
+    .stat-card.success {
+        border-left-color: #10b981;
+    }
+
+    .stat-card.warning {
+        border-left-color: #f59e0b;
+    }
+
+    .stat-card.danger {
+        border-left-color: #ef4444;
+    }
+
+    .stat-card.info {
+        border-left-color: #3b82f6;
+    }
+
+
+    </style>
+
+    @RenderSection("Head", required: false)
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <!-- Add conditional 'has-sidebar' class -->
+    <div id="app" class="app @(showSidebar ? "has-sidebar" : "")">
+        @if (showSidebar)
+        {
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="sb-brand">
+                      <a class="navbar-brand text-primary" href="#">
+                <i class="fas fa-heartbeat me-2"></i>MediClaim
+            </a>
+                    </div>
+                    <button id="sbToggle" class="sb-toggle" title="Toggle sidebar">
+                        <i class="bi bi-layout-sidebar-inset"></i>
+                    </button>
+                </div>
+
+                <nav class="sb-nav nav flex-column">
+                    <!-- Use data-section for role gating -->
+                    <a class="nav-link" href="/Dashboard">
+                        <i class="bi bi-speedometer2"></i> <span class="sb-text">Dashboard</span>
+                    </a>
+                    <a class="nav-link" data-section="Policy Management" href="/Policy">
+                        <i class="bi bi-kanban"></i> <span class="sb-text">Policy Management</span>
+                    </a>
+                    <a class="nav-link" data-section="Claims" href="/Dashboard/policyrequest">
+                        <i class="bi bi-ui-checks-grid"></i> <span class="sb-text">Policy Requests</span>
+                    </a>
+                    <a class="nav-link" data-section="Claim Review" href="/Dashboard/claim">
+                        <i class="bi bi-clipboard2-check"></i> <span class="sb-text">Claim Review</span>
+                    </a>
+                    <a class="nav-link" data-section="Raise Ticket" href="/Dashboard/supportticket">
+                        <i class="bi bi-life-preserver"></i> <span class="sb-text">Raise Ticket</span>
+                    </a>
+                    <a class="nav-link" data-section="User Management" href="/Dashboard/usermanagement">
+                        <i class="bi bi-people"></i> <span class="sb-text">User Management</span>
+                    </a>
+                      <a class="nav-link" href="/" id="btnLogout">
+  <i class="fa-solid fa-right-from-bracket"></i>
+  <span class="sb-text">LogOut</span>
+</a>
+
+                </nav>
+            </aside>
+
+            <!-- TOP NAVBAR -->
+            <header class="topbar">
+                <div class="d-flex align-items-center gap-2">
+                    <button id="sbToggle2" class="btn btn-light btn-sm d-lg-none">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <span class="fw-semibold">Dashboard</span>
+                </div>
+                <div class="user-pill">
+                    <div class="avatar" id="avatar">U</div>
+                    <div class="user-meta">
+                        <div class="name" id="topUserName">User</div>
+                        <div class="sub"><span id="topRoles">ROLE</span> · <span id="topEmail">user@example.com</span></div>
+                    </div>
+                    <i class="bi bi-person-circle fs-5 ms-1"></i>
+                </div>
+            </header>
+        }
+        <!-- MAIN CONTENT -->
+        <main class="content">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        @if (showSidebar)
+        {
+            <text>
+            (function () {
+                // Sidebar toggle + remember state
+                const app = document.getElementById('app');
+                const KEY = 'sidebar-collapsed';
+                const setCollapsed = (v)=>{ v ? app.classList.add('sb-collapsed') : app.classList.remove('sb-collapsed'); localStorage.setItem(KEY, v ? '1':'0'); };
+                setCollapsed(localStorage.getItem(KEY) === '1');
+                document.getElementById('sbToggle') .addEventListener('click', ()=> setCollapsed(!app.classList.contains('sb-collapsed')));
+                document.getElementById('sbToggle2').addEventListener('click', ()=> setCollapsed(!app.classList.contains('sb-collapsed')));
+
+                // Load user from localStorage and fill topbar
+                let u = {};
+                try { u = JSON.parse(localStorage.getItem('userData') || '{}'); } catch {}
+                const roles = Array.isArray(u.roles) ? u.roles : [];
+                const name  = (u.username || 'User').toString();
+                const email = (u.email || '').toString();
+                document.getElementById('topUserName').textContent = name;
+                document.getElementById('topRoles').textContent    = roles.join(', ') || 'USER';
+                document.getElementById('topEmail').textContent    = email || '—';
+                document.getElementById('avatar').textContent      = (name.trim()[0] || 'U').toUpperCase();
+
+                // Role gating for sidebar links
+                const roleMap = {
+                    ADMIN: ["User Management","Policy Management","Claim Review","Raise Ticket","Analytics","Claims","Client Support"],
+                    USER: ["View Policies","Submit Claim","Raise Ticket","Analytics"],
+                    AGENT: ["Policy Management","Raise Ticket","Analytics","Claims"],
+                    CLAIM_ADJUSTER: ["Claim Review","Analytics"]
+                };
+                const allowed = new Set(); roles.forEach(r => (roleMap[r]||[]).forEach(s => allowed.add(s)));
+                document.querySelectorAll('[data-section]').forEach(el=>{
+                    const s = el.getAttribute('data-section');
+                    // if no roles provided, do not hide; otherwise require membership
+                    el.style.display = (allowed.size===0 || allowed.has(s)) ? '' : 'none';
+                });
+            })();
+            </text>
+        }
+
+        // Show Logout button for ADMIN / AGENT / CLAIM_ADJUSTER interfaces
+ document.addEventListener('DOMContentLoaded', function () {
+    const logoutBtn = document.getElementById('btnLogout');
+
+    if (logoutBtn) {
+      logoutBtn.addEventListener('click', function (e) {
+        e.preventDefault(); // Stop the default navigation
+        try {
+          localStorage.removeItem('userData');
+          console.log('userData removed');
+        } catch (err) {
+          console.error('Error removing userData:', err);
+        }
+        // Redirect manually after clearing storage
+        window.location.href = logoutBtn.getAttribute('href');
+      });
+    }
+  });
+
+    </script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

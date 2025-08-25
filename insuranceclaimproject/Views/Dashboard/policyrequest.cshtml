@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending Policy Categories</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        .table-responsive {
+            border-radius: 1rem;
+        }
+
+        .table th, .table td {
+            vertical-align: middle;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+            transition: all 0.3s ease;
+            border-radius: 0.5rem;
+        }
+
+            .btn-success:hover {
+                background-color: #218838;
+                border-color: #1e7e34;
+                transform: translateY(-2px);
+            }
+
+        .alert-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050;
+            width: 300px;
+        }
+
+        .message-box {
+            display: none;
+        }
+
+        .spinner-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="card p-4">
+            <h1 class="text-center mb-4 text-primary">Pending Policy Categories</h1>
+            <div id="message-container" class="mb-3"></div>
+
+            <div class="spinner-container" id="loading-spinner">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead class="bg-primary text-white">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Category Type</th>
+                            <th scope="col">User ID</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="policy-categories-table-body">
+                        <!-- Pending policies will be loaded here by jQuery -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <p id="no-data-message" class="text-muted mt-4" style="display: none;">No pending policy categories found.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Base URL for API calls
+            const baseUrl = "https://localhost:7118/api/PolicyCategory"; // Adjust this if your API is hosted elsewhere
+
+            // Function to show a message in the custom message box
+            function showMessage(type, text) {
+                const messageBox = type === 'success' ? $('#success-message') : $('#error-message');
+                const messageText = type === 'success' ? $('#success-text') : $('#error-text');
+
+                messageText.text(text);
+                messageBox.fadeIn().delay(5000).fadeOut();
+            }
+
+            // Function to get the authentication token
+            function getAuthToken() {
+                const userDataString = localStorage.getItem('userData');
+                if (!userDataString) {
+                    showMessage('error', "No authentication token found. Please log in.");
+                    // In a real application, you'd redirect here.
+                    // window.location.href = "/login";
+                    return null;
+                }
+
+                try {
+                    const userData = JSON.parse(userDataString);
+                    return userData.token;
+                } catch (e) {
+                    console.error("Failed to parse userData from localStorage", e);
+                    showMessage('error', "Authentication data is corrupted. Please log in again.");
+                    return null;
+                }
+            }
+
+            // Function to fetch and display pending policy categories
+            function fetchPendingCategories() {
+                const token = getAuthToken();
+                if (!token) {
+                    $('#loading-spinner').hide();
+                    return;
+                }
+
+                $('#loading-spinner').show();
+                $('#no-data-message').hide();
+                $('#policy-categories-table-body').empty();
+
+                $.ajax({
+                    url: `${baseUrl}/pending`,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    },
+                    success: function(data) {
+                        $('#loading-spinner').hide();
+                        if (data.length === 0) {
+                            $('#no-data-message').show();
+                            return;
+                        }
+
+                        // Populate the table with fetched data
+                        data.forEach(category => {
+                            const newRow = `
+                                <tr id="row-${category.policyCategoryId}">
+                                    <td>${category.policyCategoryId}</td>
+                                    <td>${category.categoryType}</td>
+                                    <td>${category.userId}</td>
+                                    <td><span class="badge bg-warning text-dark">${category.status}</span></td>
+                                    <td>
+                                        <button class="btn btn-success btn-sm activate-btn" data-id="${category.policyCategoryId}">
+                                            <i class="fa-solid fa-check"></i> Create Policy
+                                        </button>
+                                    </td>
+                                </tr>
+                            `;
+                            $('#policy-categories-table-body').append(newRow);
+                        });
+                    },
+                    error: function(xhr, status, error) {
+                        $('#loading-spinner').hide();
+                        console.error("Error fetching pending policies:", xhr.responseText);
+                        showMessage('error', "Failed to fetch pending policies. Please try again.");
+                    }
+                });
+            }
+
+            // Click event listener for the "Create Policy" button
+                    // Coverage amount mapping based on category type
+        const coverageMap = {
+            "Individual Health Insurance": 500000,
+            "Critical Illness Insurance": 800000,
+            "Personal Accident Insurance": 300000
+        };
+
+        // Click event listener for the "Create Policy" button
+        $(document).on('click', '.activate-btn', function () {
+            const button = $(this);
+            const row = button.closest('tr');
+            const policyCategoryId = button.data('id');
+            const categoryType = row.find('td:nth-child(2)').text().trim(); // Get category type from second column
+            const token = getAuthToken();
+
+            if (!token) return;
+
+            const coverageAmount = coverageMap[categoryType];
+            if (!coverageAmount) {
+                showMessage('error', `Unknown category type: ${categoryType}`);
+                return;
+            }
+
+            // Show loading state
+            button.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Creating...').prop('disabled', true);
+
+            $.ajax({
+                url: `${baseUrl}/activate-and-create-policy`,
+                method: 'POST',
+                contentType: 'application/json',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                },
+                data: JSON.stringify({
+                    policyCategoryId: policyCategoryId,
+                    coverageAmount: coverageAmount
+                }),
+                success: function (response) {
+                    $(`#row-${policyCategoryId}`).fadeOut(400, function () {
+                        $(this).remove();
+                        if ($('#policy-categories-table-body').children().length === 0) {
+                            $('#no-data-message').show();
+                        }
+                    });
+                    showMessage('success', `Policy created for category "${categoryType}" with coverage ₹${coverageAmount.toLocaleString()}.`);
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error creating policy:", xhr.responseText);
+                    showMessage('error', `Failed to create policy for category "${categoryType}".`);
+                    button.html('<i class="fa-solid fa-check"></i> Create Policy').prop('disabled', false);
+                }
+            });
+        });
+
+            // Initial data fetch when the page loads
+            fetchPendingCategories();
+        });
+    </script>
+</body>
+</html>

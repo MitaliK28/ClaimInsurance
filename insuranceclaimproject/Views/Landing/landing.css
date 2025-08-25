@@ -1,0 +1,196 @@
+﻿
+:root {
+    --primary: #2563eb;
+    --secondary: #1e40af;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --light-bg: #f8fafc;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fbfd;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+    .navbar .nav-link {
+        color: white !important;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+        .navbar .nav-link:hover {
+            color: #cbd5e1 !important;
+        }
+
+.btn-login {
+    background: #fff;
+    color: var(--primary);
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 6px 18px;
+    transition: all 0.3s;
+}
+
+    .btn-login:hover {
+        background: var(--light-bg);
+        color: var(--secondary);
+    }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://t4.ftcdn.net/jpg/09/07/78/15/360_F_907781588_2IsqwMVbM2Vrr0FqCZBjmcNgKHcDuUpb.jpg") center/cover;
+    color: white;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .hero .btn-main {
+        background: linear-gradient(45deg, var(--primary), var(--success));
+        border: none;
+        padding: 12px 28px;
+        border-radius: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+        transition: all 0.3s;
+    }
+
+        .hero .btn-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+/* Stats Section */
+.stats {
+    background: var(--light-bg);
+    padding: 4rem 0;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+    }
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Services */
+.card-service {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .card-service:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+.insurance-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.health {
+    background: linear-gradient(45deg, var(--success), #059669);
+}
+
+.critical {
+    background: linear-gradient(45deg, var(--danger), #b91c1c);
+}
+
+.accident {
+    background: linear-gradient(45deg, var(--warning), #d97706);
+}
+
+/* Process Timeline */
+.process {
+    position: relative;
+    padding-left: 40px;
+}
+
+    .process::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 18px;
+        width: 4px;
+        height: 100%;
+        background: var(--primary);
+    }
+
+.step {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+    .step::before {
+        content: attr(data-step);
+        position: absolute;
+        left: -40px;
+        top: 0;
+        background: var(--primary);
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+    color: white;
+    padding: 2rem 0;
+}
+
+    footer a {
+        color: dodgerblue;
+        transition: color 0.3s;
+    }
+
+        footer a:hover {
+            color: white;
+        }

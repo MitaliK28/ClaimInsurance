@@ -1,0 +1,523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claims Management Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .claims-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .claim-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+
+            .claim-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            }
+
+        .claim-header {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            border-radius: 12px 12px 0 0;
+            padding: 1.5rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .claim-body {
+            padding: 1.5rem;
+        }
+
+        .status-badge {
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+
+        .status-pending {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .status-approved {
+            background-color: #d1edff;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        .status-rejected {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .action-buttons {
+            gap: 0.5rem;
+        }
+
+        .btn-approve {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            border: none;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+            .btn-approve:hover {
+                background: linear-gradient(45deg, #218838, #1e7e34);
+                transform: translateY(-1px);
+                box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+                color: white;
+            }
+
+        .btn-reject {
+            background: linear-gradient(45deg, #dc3545, #e74c3c);
+            border: none;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+            .btn-reject:hover {
+                background: linear-gradient(45deg, #c82333, #bd2130);
+                transform: translateY(-1px);
+                box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+                color: white;
+            }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none !important;
+            box-shadow: none !important;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+      
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f3f4;
+        }
+
+            .info-row:last-child {
+                border-bottom: none;
+            }
+
+        .info-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .info-value {
+            color: #6c757d;
+        }
+
+        .document-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+            .document-link:hover {
+                color: #764ba2;
+                text-decoration: underline;
+            }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #6c757d;
+        }
+
+            .empty-state i {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                color: #dee2e6;
+            }
+    </style>
+</head>
+<body>
+    <div class="header-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mb-0"><i class="fas fa-clipboard-list me-3"></i>Claims Management Dashboard</h1>
+                    <p class="mb-0 opacity-75">Review and manage insurance claims</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="claims-container">
+        <div id="loadingIndicator" class="text-center py-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3 text-muted">Loading claims...</p>
+        </div>
+
+        <div id="claimsContainer" style="display: none;">
+            <!-- Claims will be loaded here -->
+        </div>
+
+        <div id="errorContainer" class="alert alert-danger" style="display: none;">
+            <i class="fas fa-exclamation-triangle me-2"></i>
+            <span id="errorMessage"></span>
+        </div>
+    </div>
+
+    <!-- Document Modal -->
+    <div class="modal fade" id="documentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="documentTitle" class="modal-title">Document</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="documentLoader" class="text-center py-4">Loading…</div>
+
+                    <div id="documentError" class="alert alert-danger d-none">
+                        <span id="documentErrorMessage">Failed to load document.</span>
+                    </div>
+
+                    <div id="documentContent" class="d-none">
+                        <img id="documentImage" class="img-fluid d-none" alt="document image" />
+                        <iframe id="documentIframe" class="d-none" style="width:100%;height:70vh;" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- Success/Error Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="statusToast" class="toast" role="alert">
+            <div class="toast-header">
+                <i id="toastIcon" class="fas fa-check-circle text-success me-2"></i>
+                <strong class="me-auto" id="toastTitle">Success</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body" id="toastMessage">
+                Claim status updated successfully!
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+               $(document).ready(function() {
+            const API_BASE = 'https://localhost:7118/api';
+            const userDataString = localStorage.getItem('userData');
+            let token = null;
+
+            if (userDataString) {
+                try {
+                    const userData = JSON.parse(userDataString);
+                    token = userData.token;
+                } catch (e) {
+                    console.error("Failed to parse userData from localStorage", e);
+                }
+            }
+
+            if (!token) {
+                alert("No authentication token found. Please log in.");
+                window.location.href = "/";
+                return;
+            }
+
+            loadClaims();
+
+            function loadClaims() {
+                $('#loadingIndicator').show();
+                $('#claimsContainer').hide();
+                $('#errorContainer').hide();
+
+                $.ajax({
+                    url: `${API_BASE}/Claim/all`,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    success: function(data) {
+                        displayClaims(data);
+                        $('#loadingIndicator').hide();
+                        $('#claimsContainer').show();
+                    },
+                    error: function(xhr, status, error) {
+                        if (xhr.status === 401) {
+                            alert("Authentication failed. Please log in again.");
+                            window.location.href = "/";
+                            return;
+                        }
+                        showError(`Failed to load claims: ${error}`);
+                        $('#loadingIndicator').hide();
+                        $('#errorContainer').show();
+                    }
+                });
+            }
+
+            function displayClaims(claims) {
+                const container = $('#claimsContainer');
+                container.empty();
+
+                if (claims.length === 0) {
+                    container.html(`
+                        <div class="empty-state">
+                            <i class="fas fa-inbox"></i>
+                            <h3>No Claims Found</h3>
+                            <p>There are no claims to display at this time.</p>
+                        </div>
+                    `);
+                    return;
+                }
+
+                claims.forEach(claim => {
+                    const claimCard = createClaimCard(claim);
+                    container.append(claimCard);
+                });
+            }
+
+            function createClaimCard(claim) {
+                const statusClass = getStatusClass(claim.claimStatus);
+                const formattedDate = new Date(claim.claimDate).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                const formattedAmount = new Intl.NumberFormat('en-US', {
+                    style: 'currency',
+                    currency: 'USD'
+                }).format(claim.claimAmount);
+
+                const isPending = claim.claimStatus.toLowerCase() === 'pending';
+
+                return `
+                    <div class="claim-card">
+                        <div class="claim-header">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h4 class="mb-1">Claim #${claim.claimId}</h4>
+                                    <p class="mb-0 text-muted">Policy ID: ${claim.policyId}</p>
+                                </div>
+                                <div class="col-md-4 text-md-end">
+                                    <span class="status-badge ${statusClass}">
+                                        <i class="fas ${getStatusIcon(claim.claimStatus)} me-1"></i>
+                                        ${claim.claimStatus}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="claim-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="info-row">
+                                        <span class="info-label">Claim Amount:</span>
+                                        <span class="info-value fw-bold text-success">${formattedAmount}</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Claim Date:</span>
+                                        <span class="info-value">${formattedDate}</span>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="info-label">Adjuster ID:</span>
+                                        <span class="info-value">${claim.adjusterId || 'Not Assigned'}</span>
+                                    </div>
+                                    ${claim.document ? `
+                                    <div class="info-row">
+                                        <span class="info-label">Document:</span>
+                                        <a href="#" class="document-link" onclick="downloadDocumentByClaimId(${claim.claimId}, '${claim.document.documentName}', '${claim.document.documentType}', event)">
+                                            <i class="fas fa-file-alt me-1"></i>
+                                            ${claim.document.documentName}.${claim.document.documentType.toLowerCase()}
+                                        </a>
+                                    </div>
+                                    ` : ''}
+                                </div>
+                                <div class="col-md-4">
+                                    ${isPending ? `
+                                    <div class="action-buttons d-flex flex-column">
+                                        <button class="btn btn-approve mb-2" onclick="updateClaimStatus(${claim.claimId}, 2, this)">
+                                            <i class="fas fa-check me-1"></i>
+                                            Approve
+                                        </button>
+                                        <button class="btn btn-reject" onclick="updateClaimStatus(${claim.claimId}, 3, this)">
+                                            <i class="fas fa-times me-1"></i>
+                                            Reject
+                                        </button>
+                                    </div>
+                                    ` : `
+                                    <div class="text-muted text-center">
+                                        <i class="fas fa-lock me-1"></i>
+                                        Status Finalized
+                                    </div>
+                                    `}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            function getStatusClass(status) {
+                switch(status.toLowerCase()) {
+                    case 'pending': return 'status-pending';
+                    case 'approved': return 'status-approved';
+                    case 'rejected': return 'status-rejected';
+                    default: return 'status-pending';
+                }
+            }
+
+            function getStatusIcon(status) {
+                switch(status.toLowerCase()) {
+                    case 'pending': return 'fa-clock';
+                    case 'approved': return 'fa-check-circle';
+                    case 'rejected': return 'fa-times-circle';
+                    default: return 'fa-clock';
+                }
+            }
+
+            window.updateClaimStatus = function(claimId, status, button) {
+                const $button = $(button);
+                const originalText = $button.html();
+
+                $button.prop('disabled', true).html('<span class="loading"></span> Processing...');
+
+                $.ajax({
+                    url: `${API_BASE}/Claim/${claimId}/status`,
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    data: JSON.stringify({ status: status }),
+                    success: function(response) {
+                        const statusText = status === 2 ? 'approved' : 'rejected';
+                        showToast('success', 'Success!', `Claim #${claimId} has been ${statusText} successfully.`);
+                        setTimeout(() => {
+                            loadClaims();
+                        }, 1000);
+                    },
+                    error: function(xhr, status, error) {
+                        if (xhr.status === 401) {
+                            alert("Authentication failed. Please log in again.");
+                            window.location.href = "/";
+                            return;
+                        }
+                        showToast('error', 'Error!', `Failed to update claim #${claimId} status: ${error}`);
+                        $button.prop('disabled', false).html(originalText);
+                    }
+                });
+            };
+
+            // The new download function
+            window.downloadDocumentByClaimId = function(claimId, documentName, documentType, event) {
+                event.preventDefault();
+
+                const url = `${API_BASE}/Claim/${claimId}/download-document`;
+                const filename = `${documentName}.${documentType.toLowerCase()}`;
+
+                // Use AJAX to download the file as a blob
+                $.ajax({
+                    url: url,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    },
+                    xhrFields: {
+                        responseType: 'blob'
+                    },
+                    success: function(data) {
+                        const blob = new Blob([data]);
+                        const blobUrl = window.URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.style.display = 'none';
+                        a.href = blobUrl;
+                        a.download = filename;
+                        document.body.appendChild(a);
+                        a.click();
+                        window.URL.revokeObjectURL(blobUrl);
+                        document.body.removeChild(a);
+                        showToast('success', 'Success!', 'Document download started.');
+                    },
+                    error: function(xhr, status, error) {
+                        showToast('error', 'Error!', `Failed to download document: ${error}`);
+                    }
+                });
+            };
+
+            function showToast(type, title, message) {
+                const toast = $('#statusToast');
+                const icon = $('#toastIcon');
+                const toastTitle = $('#toastTitle');
+                const toastMessage = $('#toastMessage');
+
+                if (type === 'success') {
+                    icon.removeClass('fa-exclamation-triangle text-danger').addClass('fa-check-circle text-success');
+                } else {
+                    icon.removeClass('fa-check-circle text-success').addClass('fa-exclamation-triangle text-danger');
+                }
+
+                toastTitle.text(title);
+                toastMessage.text(message);
+
+                const bsToast = new bootstrap.Toast(toast[0]);
+                bsToast.show();
+            }
+
+            function showError(message) {
+                $('#errorMessage').text(message);
+            }
+        });
+
+        // The previous viewDocument function is no longer needed since you want to download.
+        // If you want a preview feature in the future, you can re-integrate it, but for now, this
+        // handles the specific download requirement.
+    </script>
+</body>
+</html>

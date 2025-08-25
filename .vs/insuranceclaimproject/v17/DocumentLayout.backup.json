@@ -1,0 +1,1015 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250825041817_add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:insuranceclaimproject\\Migrations\\20250825041817_add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\authenticationui\\loginregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\authenticationui\\loginregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\userdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\userdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\landing\\landing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\landing\\landing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\landing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\landing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\dashboard\\policyrequest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\dashboard\\policyrequest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\policycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\policycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\ipolicycategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\ipolicycategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\policycategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\policycategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\policycategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\policycategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\models\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\models\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\policyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\policyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\models\\policycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\models\\policycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\createpolicycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\createpolicycategorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\dashboard\\supportticket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\dashboard\\supportticket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\supportticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\supportticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\models\\supportticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\models\\supportticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\enhancedclaimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\enhancedclaimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\models\\claim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\policyui\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\policyui\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\claimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\claimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\claimcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\dashboard\\dashboardforuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\dashboard\\dashboardforuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\dashboard\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\dashboard\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\userdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\userdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\authenticationuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\authenticationuicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\supportticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\supportticketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\createsupportticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\createsupportticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\updatesupportticketstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\updatesupportticketstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\supportticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\supportticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\dashboard\\claim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\dashboard\\claim.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\updatepolicydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\updatepolicydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\ienhancedclaimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\ienhancedclaimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\dashboard\\claimform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\dashboard\\claimform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\claimdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\claimdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\createpolicydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\createpolicydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\iclaimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\iclaimservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\createdocumentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\createdocumentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054813_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054247_add policycategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\models\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\updateclaimstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\updateclaimstatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\filehelperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\filehelperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\services\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\services\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\documentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\wwwroot\\img\\img.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\wwwroot\\img\\img.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|c:\\users\\2421014\\downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\dtos\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B18C18-E1C5-44BD-9801-929BDBE5B67A}|insuranceclaimproject\\insuranceclaimproject.csproj|solutionrelative:insuranceclaimproject\\dtos\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815123903_donemig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815055420_completed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 210,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250825041817_add.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250825041817_add.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Migrations\\20250825041817_add.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250825041817_add.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Migrations\\20250825041817_add.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-25T04:18:18.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\AuthenticationUI\\LoginRegister.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\AuthenticationUI\\LoginRegister.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\AuthenticationUI\\LoginRegister.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\AuthenticationUI\\LoginRegister.cshtml",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAALAAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-25T04:04:06.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "landing.css",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Landing\\landing.css",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Landing\\landing.css",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Landing\\landing.css",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Landing\\landing.css",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAAL0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-25T01:35:44.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "policyrequest.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\policyrequest.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Dashboard\\policyrequest.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\policyrequest.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Dashboard\\policyrequest.cshtml",
+              "ViewState": "AgIAALUAAAAAAAAAAAAuwPMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-24T15:25:14.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPolicyCategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\IPolicyCategoryService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\IPolicyCategoryService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\IPolicyCategoryService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\IPolicyCategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T15:22:19.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\appsettings.json",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\appsettings.json",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\appsettings.json",
+              "RelativeToolTip": "insuranceclaimproject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-13T11:13:29.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Policy.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\Policy.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Models\\Policy.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\Policy.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Models\\Policy.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T15:01:34.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PolicyService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\PolicyService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\PolicyService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\PolicyService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\PolicyService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T15:15:58.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PolicyCategory.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\PolicyCategory.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Models\\PolicyCategory.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\PolicyCategory.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Models\\PolicyCategory.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAywB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T15:15:18.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PolicyCategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\PolicyCategoryDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\PolicyCategoryDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\PolicyCategoryDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\PolicyCategoryDto.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAiwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T15:13:28.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PolicyCategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\PolicyCategoryService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\PolicyCategoryService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\PolicyCategoryService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\PolicyCategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T15:01:00.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PolicyCategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\PolicyCategoryController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\PolicyCategoryController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\PolicyCategoryController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\PolicyCategoryController.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAqwIkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T15:00:34.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "usermanagement.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\usermanagement.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Dashboard\\usermanagement.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\usermanagement.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Dashboard\\usermanagement.cshtml",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAgwE0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T06:40:05.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\UserDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\UserDashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\UserDashboard\\Index.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\UserDashboard\\Index.cshtml",
+              "ViewState": "AgIAAIgBAAAAAAAAAAAuwKEBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T02:36:24.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "UserDashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\UserDashboardController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\UserDashboardController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\UserDashboardController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\UserDashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:36:10.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "supportticket.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\supportticket.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Dashboard\\supportticket.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\supportticket.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Dashboard\\supportticket.cshtml",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAiwJMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T01:58:03.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "claim.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\claim.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Dashboard\\claim.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\claim.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Dashboard\\claim.cshtml",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAwwP0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-22T23:18:05.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "claimform.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\claimform.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Dashboard\\claimform.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\claimform.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Dashboard\\claimform.cshtml",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAgwMMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-22T11:10:55.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "dashboardforuser.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\dashboardforuser.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Dashboard\\dashboardforuser.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Dashboard\\dashboardforuser.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Dashboard\\dashboardforuser.cshtml",
+              "ViewState": "AgIAADoGAAAAAAAAAAAgwGAGAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-22T10:32:15.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreatePolicyCategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\CreatePolicyCategoryDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\CreatePolicyCategoryDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\CreatePolicyCategoryDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\CreatePolicyCategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T06:31:52.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250822054813_initial.cs",
+              "DocumentMoniker": "C:\\Users\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054813_initial.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054813_initial.cs",
+              "ToolTip": "C:\\Users\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054813_initial.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054813_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:48:14.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20250822054247_add policycategory.cs",
+              "DocumentMoniker": "C:\\Users\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054247_add policycategory.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054247_add policycategory.cs",
+              "ToolTip": "C:\\Users\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054247_add policycategory.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\2421093\\Desktop\\project\\new\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250822054247_add policycategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:42:47.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EnhancedClaimService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\EnhancedClaimService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\EnhancedClaimService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\EnhancedClaimService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\EnhancedClaimService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAwB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T11:10:04.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "FileHelperService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\FileHelperService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\FileHelperService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\FileHelperService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\FileHelperService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAE4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T11:08:20.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "IEnhancedClaimService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\IEnhancedClaimService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\IEnhancedClaimService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\IEnhancedClaimService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\IEnhancedClaimService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T10:57:15.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Landing\\Index.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Landing\\Index.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Landing\\Index.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Landing\\Index.cshtml",
+              "ViewState": "AgIAADICAAAAAAAAAAAuwHACAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-20T12:38:07.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\PolicyUI\\Index.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\PolicyUI\\Index.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\PolicyUI\\Index.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\PolicyUI\\Index.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAcwFUBAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-20T03:51:46.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwCEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T10:00:21.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T09:32:05.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T09:32:02.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "insuranceclaimproject\\wwwroot\\css\\style.css",
+              "ViewState": "AgIAAMwBAAAAAAAAAAAiwO0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-08-19T05:33:12.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AuthenticationUIController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\AuthenticationUIController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\AuthenticationUIController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\AuthenticationUIController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\AuthenticationUIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T04:28:45.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "insuranceclaimproject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAOsBAAAAAAAAAAAAAPwBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T03:40:40.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T06:37:27.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "img.jpg - Bitmap [340x340, 24 bit, JPG]",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\wwwroot\\img\\img.jpg",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\wwwroot\\img\\img.jpg",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\wwwroot\\img\\img.jpg - Bitmap [340x340, 24 bit, JPG]",
+              "RelativeToolTip": "insuranceclaimproject\\wwwroot\\img\\img.jpg - Bitmap [340x340, 24 bit, JPG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-08-18T06:18:19.331Z",
+              "EditorCaption": " - Bitmap [340x340, 24 bit, JPG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CreateDocumentDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\CreateDocumentDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\CreateDocumentDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\CreateDocumentDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\CreateDocumentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:01:32.036Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CreateSupportTicketDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\CreateSupportTicketDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\CreateSupportTicketDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\CreateSupportTicketDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\CreateSupportTicketDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:05:55.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "DocumentDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\DocumentDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\DocumentDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\DocumentDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\DocumentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:02:19.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SupportTicketDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\SupportTicketDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\SupportTicketDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\SupportTicketDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\SupportTicketDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:07:32.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "UpdateSupportTicketStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UpdateSupportTicketStatusDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\UpdateSupportTicketStatusDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UpdateSupportTicketStatusDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\UpdateSupportTicketStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:06:59.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SupportTicketController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\SupportTicketController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\SupportTicketController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\SupportTicketController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\SupportTicketController.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAswH4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:10:58.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "DocumentController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\DocumentController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\DocumentController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\DocumentController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\DocumentController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAwEkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:05:08.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SupportTicketService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\SupportTicketService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\SupportTicketService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\SupportTicketService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\SupportTicketService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:08:36.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IDocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\IDocumentService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\IDocumentService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\IDocumentService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\IDocumentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:03:08.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\DocumentService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\DocumentService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\DocumentService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\DocumentService.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T05:03:57.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SupportTicket.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\SupportTicket.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Models\\SupportTicket.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\SupportTicket.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Models\\SupportTicket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:11:23.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CreatePolicyDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\CreatePolicyDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\CreatePolicyDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\CreatePolicyDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\CreatePolicyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T11:22:22.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "UpdatePolicyDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UpdatePolicyDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\UpdatePolicyDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UpdatePolicyDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\UpdatePolicyDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T11:23:18.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UpdateClaimStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UpdateClaimStatusDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\UpdateClaimStatusDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UpdateClaimStatusDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\UpdateClaimStatusDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T03:43:22.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\UserLoginDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UserLoginDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\UserLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T14:06:17.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ClaimDetailsDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\ClaimDetailsDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\ClaimDetailsDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\ClaimDetailsDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\ClaimDetailsDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T03:42:25.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Dtos\\UserProfileDto.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Dtos\\UserProfileDto.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Dtos\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T14:06:48.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ClaimController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\ClaimController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\ClaimController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\ClaimController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\ClaimController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwDwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T03:39:11.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAkwMUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T12:16:53.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IClaimService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\IClaimService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\IClaimService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\IClaimService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\IClaimService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T15:20:28.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ClaimService.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\ClaimService.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Services\\ClaimService.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Services\\ClaimService.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Services\\ClaimService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T03:36:55.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Document.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\Document.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Models\\Document.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\Document.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Models\\Document.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:22:15.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Claim.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\Claim.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Models\\Claim.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\Claim.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Models\\Claim.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:18:02.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Models\\AppUser.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T11:10:09.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "insuranceclaimproject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\2421014\\Downloads\\insuranceclaimproject (2)\\insuranceclaimproject\\insuranceclaimproject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "insuranceclaimproject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T14:14:06.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20250815123903_donemig.cs",
+              "DocumentMoniker": "C:\\Users\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815123903_donemig.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815123903_donemig.cs",
+              "ToolTip": "C:\\Users\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815123903_donemig.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815123903_donemig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T12:39:03.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20250815055420_completed.cs",
+              "DocumentMoniker": "C:\\Users\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815055420_completed.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815055420_completed.cs",
+              "ToolTip": "C:\\Users\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815055420_completed.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\2421103\\source\\repos\\insuranceclaimproject\\insuranceclaimproject\\Migrations\\20250815055420_completed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T05:54:21.2Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+﻿@{
+    ViewData["Title"] = "Support Tickets";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Tickets</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h2 class="mb-0">Support Tickets</h2>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-info text-center" id="loadingMessage">
+                    Loading tickets...
+                </div>
+                <div class="alert alert-danger d-none" id="errorMessage">
+                    Failed to load tickets. Please try again.
+                </div>
+                <div class="alert alert-success d-none" id="successMessage"></div>
+
+                <table class="table table-hover d-none" id="ticketsTable">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Ticket ID</th>
+                            <th scope="col">User ID</th>
+                            <th scope="col">Issue Description</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Created Date</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ticketsTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="~/lib/popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            const apiBaseUrl = 'https://localhost:7118/api/SupportTicket'; // Replace with your actual API base URL
+            const userDataString = localStorage.getItem('userData');
+            let authToken = null;
+
+            if (userDataString) {
+                try {
+                    const userData = JSON.parse(userDataString);
+                    authToken = userData.token;
+                } catch (e) {
+                    console.error("Failed to parse userData from localStorage", e);
+                }
+            }
+
+            if (!authToken) {
+                alert("No authentication token found. Please log in.");
+                window.location.href = "/";
+                return;
+            }
+           
+
+            function fetchTickets() {
+                $('#loadingMessage').removeClass('d-none');
+                $('#errorMessage').addClass('d-none');
+                $('#ticketsTable').addClass('d-none');
+                $('#ticketsTableBody').empty();
+
+                $.ajax({
+                    url: `${apiBaseUrl}/all`,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`
+                    },
+                    success: function(tickets) {
+                        $('#loadingMessage').addClass('d-none');
+                        $('#ticketsTable').removeClass('d-none');
+
+                        if (tickets.length === 0) {
+                            $('#ticketsTableBody').html('<tr><td colspan="6" class="text-center">No support tickets found.</td></tr>');
+                            return;
+                        }
+
+                        tickets.forEach(ticket => {
+                            const isResolved = ticket.ticketStatus === 'RESOLVED';
+                            const buttonText = isResolved ? 'Resolved' : 'Resolve';
+                            const buttonClass = isResolved ? 'btn-secondary' : 'btn-success';
+                            const buttonDisabled = isResolved ? 'disabled' : '';
+
+                            const row = `
+                                <tr>
+                                    <td>${ticket.ticketId}</td>
+                                    <td>${ticket.userId}</td>
+                                    <td>${ticket.issueDescription}</td>
+                                    <td><span class="badge ${isResolved ? 'badge-secondary' : 'badge-info'}">${ticket.ticketStatus}</span></td>
+                                    <td>${new Date(ticket.createdDate).toLocaleString()}</td>
+                                    <td>
+                                        <button class="btn btn-sm ${buttonClass} resolve-btn" data-id="${ticket.ticketId}" ${buttonDisabled}>
+                                            ${buttonText}
+                                        </button>
+                                    </td>
+                                </tr>
+                            `;
+                            $('#ticketsTableBody').append(row);
+                        });
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        $('#loadingMessage').addClass('d-none');
+                        $('#errorMessage').removeClass('d-none');
+                        console.error("Error fetching tickets:", textStatus, errorThrown);
+                    }
+                });
+            }
+
+            // Attach click handler to the body and delegate to resolve buttons
+            $('#ticketsTableBody').on('click', '.resolve-btn:not([disabled])', function() {
+                const button = $(this);
+                const ticketId = button.data('id');
+                const originalText = button.text();
+                button.text('Updating...').prop('disabled', true);
+
+                const statusUpdateDto = {
+                    ticketStatus: "RESOLVED" // Assuming RESOLVED is the enum value '2'
+                };
+
+                $.ajax({
+                    url: `${apiBaseUrl}/${ticketId}/status`,
+                    method: 'PUT',
+                    contentType: 'application/json',
+                    data: JSON.stringify(statusUpdateDto),
+                    headers: {
+                        'Authorization': `Bearer ${authToken}`
+                    },
+                    success: function() {
+                        const row = button.closest('tr');
+                        row.find('td:nth-child(4) span').text('RESOLVED').removeClass('badge-info').addClass('badge-secondary');
+
+                        button.text('Resolved').removeClass('btn-success').addClass('btn-secondary').prop('disabled', true);
+
+                        $('#successMessage').text(`Ticket ${ticketId} status updated to RESOLVED.`).removeClass('d-none').show().delay(3000).fadeOut();
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        button.text(originalText).prop('disabled', false);
+                        $('#errorMessage').text(`Failed to update ticket ${ticketId}.`).removeClass('d-none');
+                        console.error("Error updating ticket status:", textStatus, errorThrown);
+                    }
+                });
+            });
+
+            // Initial fetch of tickets when the page loads
+            fetchTickets();
+        });
+    </script>
+
+</body>
+</html>
